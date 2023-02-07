@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<component type="desktop">
+    <id>io.github.NSMBMarioVsLuigi</id>
+    <name>New Super Mario Bros Versus</name>
+    <summary>Fight against each other in the class Super Mario Bros. multiplayer mode.</summary>
+    <developer_name></developer_name>
+    <metadata_license>CC0-1.0</metadata_license>
+    <project_license></project_license>
+    <description>
+        <p>A unity-standalone 2-10 player remake of the Mario vs. Luigi gamemode from the New Super Mario Bros DS download game.</p>
+    </description>
+    <url type="homepage">https://github.com/ipodtouch0218/NSMB-MarioVsLuigi</url>
+    <url type="bugtracker">https://github.com/ipodtouch0218/NSMB-MarioVsLuigi/issues</url>
+    <url type="help">https://discord.gg/dgKVaUKpj5</url>
+    <releases>
+        <release version="1.7.1.0" date="2022-09-13" type="development">
+            <url>https://github.com/ipodtouch0218/NSMB-MarioVsLuigi/releases/tag/v1.7.1.0-beta</url>
+        </release>
+    </releases>
+    <content_rating type="oars-1.1">
+        <content_attribute id="violence-fantasy">moderate</content_attribute>
+        <content_attribute id="social-chat">intense</content_attribute>
+    </content_rating>
+</component>
