@@ -1,6 +1,6 @@
 app-id: io.github.NSMBMarioVsLuigi
 runtime: org.freedesktop.Platform
-runtime-version: '22.08'
+runtime-version: '24.08'
 sdk: org.freedesktop.Sdk
 command: mariovsluigi
 finish-args:
@@ -20,17 +20,17 @@ modules:
       - install -D libdecor-cairo.so ${FLATPAK_DEST}/share/mariovsluigi/libdecor-cairo.so
       - cp -r linux_Data ${FLATPAK_DEST}/share/mariovsluigi/
       - install -Dm755 mariovsluigi.sh ${FLATPAK_DEST}/bin/mariovsluigi
-      - install -Dm644 NSMBMarioVsLuigi.desktop ${FLATPAK_DEST}/share/applications/io.github.NSMBMarioVsLuigi.desktop
-      - install -Dm644 io.github.NSMBMarioVsLuigi.appdata.xml ${FLATPAK_DEST}/share/appdata/io.github.NSMBMarioVsLuigi.appdata.xml
-      - install -Dm644 NSMBMarioVsLuigi.png ${FLATPAK_DEST}/share/icons/hicolor/32x32/apps/io.github.NSMBMarioVsLuigi.png
+      - install -Dm644 io.github.NSMBMarioVsLuigi.desktop ${FLATPAK_DEST}/share/applications/io.github.NSMBMarioVsLuigi.desktop
+      - install -Dm644 io.github.NSMBMarioVsLuigi.metainfo.xml ${FLATPAK_DEST}/share/appdata/io.github.NSMBMarioVsLuigi.metainfo.xml
+      - install -Dm644 NSMBMarioVsLuigi.png ${FLATPAK_DEST}/share/icons/hicolor/128x128/apps/io.github.NSMBMarioVsLuigi.png
     sources:
       - type: archive
         url: https://github.com/ipodtouch0218/NSMB-MarioVsLuigi/releases/download/v2.0.3.0/MarioVsLuigi-Linux-v2.0.3.0.zip
         sha256: 402e98ba42d13b528ef00282bb5fe7129aaddfa456461ea0e695589f69abbbf5
       - type: file
-        path: NSMBMarioVsLuigi.desktop
+        path: io.github.NSMBMarioVsLuigi.desktop
       - type: file
-        path: io.github.NSMBMarioVsLuigi.appdata.xml
+        path: io.github.NSMBMarioVsLuigi.metainfo.xml
       - type: file
         path: NSMBMarioVsLuigi.png
       - type: script

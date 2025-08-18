@@ -9,6 +9,7 @@
     <description>
         <p>A unity-standalone 2-10 player remake of the Mario vs. Luigi gamemode from the New Super Mario Bros DS download game.</p>
     </description>
+    <launchable type="desktop-id">io.github.NSMBMarioVsLuigi.desktop</launchable>
     <url type="homepage">https://github.com/ipodtouch0218/NSMB-MarioVsLuigi</url>
     <url type="bugtracker">https://github.com/ipodtouch0218/NSMB-MarioVsLuigi/issues</url>
     <url type="help">https://discord.gg/dgKVaUKpj5</url>
