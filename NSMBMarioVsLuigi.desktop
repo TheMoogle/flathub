@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=New Super Mario Bros Versus
+GenericName=platformer game for 2+ players
+Exec=mariovsluigi
+Terminal=false
+Type=Application
+Icon=io.github.NSMBMarioVsLuigi
+Categories=Game;
