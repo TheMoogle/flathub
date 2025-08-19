@@ -9,20 +9,21 @@ finish-args:
   - --device=all
   - --share=network
   - --socket=pulseaudio
-
+  - --filesystem=xdg-run/app/com.discordapp.Discord
+  - --filesystem=xdg-run/discord-ipc-0
 modules:
   - name: mariovsluigi
     buildsystem: simple
     build-commands:
-      - install -D linux.x86_64 ${FLATPAK_DEST}/share/mariovsluigi/linux.x86_64
-      - install -D UnityPlayer.so ${FLATPAK_DEST}/share/mariovsluigi/UnityPlayer.so
-      - install -D libdecor-0.so.0 ${FLATPAK_DEST}/share/mariovsluigi/libdecor-0.so.0
-      - install -D libdecor-cairo.so ${FLATPAK_DEST}/share/mariovsluigi/libdecor-cairo.so
-      - cp -r linux_Data ${FLATPAK_DEST}/share/mariovsluigi/
-      - install -Dm755 mariovsluigi.sh ${FLATPAK_DEST}/bin/mariovsluigi
-      - install -Dm644 io.github.NSMBMarioVsLuigi.desktop ${FLATPAK_DEST}/share/applications/io.github.NSMBMarioVsLuigi.desktop
-      - install -Dm644 io.github.NSMBMarioVsLuigi.metainfo.xml ${FLATPAK_DEST}/share/appdata/io.github.NSMBMarioVsLuigi.metainfo.xml
-      - install -Dm644 NSMBMarioVsLuigi.png ${FLATPAK_DEST}/share/icons/hicolor/128x128/apps/io.github.NSMBMarioVsLuigi.png
+      - install -D linux.x86_64 /app/share/mariovsluigi/linux.x86_64
+      - install -D UnityPlayer.so /app/share/mariovsluigi/UnityPlayer.so
+      - install -D libdecor-0.so.0 /app/share/mariovsluigi/libdecor-0.so.0
+      - install -D libdecor-cairo.so /app/share/mariovsluigi/libdecor-cairo.so
+      - cp -r linux_Data /app/share/mariovsluigi/
+      - install -Dm755 mariovsluigi.sh /app/bin/mariovsluigi
+      - install -Dm644 io.github.NSMBMarioVsLuigi.desktop /app/share/applications/io.github.NSMBMarioVsLuigi.desktop
+      - install -Dm644 io.github.NSMBMarioVsLuigi.metainfo.xml /app/share/appdata/io.github.NSMBMarioVsLuigi.metainfo.xml
+      - install -Dm644 io.github.NSMBMarioVsLuigi.png /app/share/icons/hicolor/128x128/apps/io.github.NSMBMarioVsLuigi.png
     sources:
       - type: archive
         url: https://github.com/ipodtouch0218/NSMB-MarioVsLuigi/releases/download/v2.0.3.0/MarioVsLuigi-Linux-v2.0.3.0.zip
@@ -32,7 +33,7 @@ modules:
       - type: file
         path: io.github.NSMBMarioVsLuigi.metainfo.xml
       - type: file
-        path: NSMBMarioVsLuigi.png
+        path: io.github.NSMBMarioVsLuigi.png
       - type: script
         dest-filename: mariovsluigi.sh
         commands:
